@@ -1,15 +1,15 @@
 function largestNumFromArr(arr) {
     var maxNumArray = [];
-    var maxElement = 0;
+    var max = 0;
   
     for (var i = 0; i < arr.length; i++) {
-      maxElement = arr[i][0];
+      max = arr[i][0];
       for (var j = 0; j < arr[i].length; j++) {
-        if (maxElement < arr[i][j]) {
-          maxElement = arr[i][j];
+        if (max < arr[i][j]) {
+          max = arr[i][j];
         }
       }
-      maxNumArray.push(maxElement);
+      maxNumArray.push(max);
     }
   
     return maxNumArray;
